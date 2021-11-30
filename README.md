@@ -1,4 +1,7 @@
 ## Quick & simple explaination of using redux toolkit
 incremenet & decrement & toggle visible counter login and logout state with redux toolkit.
 
-### Deploy on Vercel
+### Tech:
+- ReactJs.
+- NextJs.
+- Redux Toolkit.
