@@ -2,6 +2,7 @@ import classes from './Header.module.css';
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { authActions } from '../store/auth';
+import Link from "next/link"
 const Header = () => {
   const isAuth = useSelector(state => state.auth.isAuthenticated)
   const dispatch = useDispatch()
@@ -17,10 +18,10 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href='/'>My Products</a>
+              <Link href='/'>My Products</Link>
             </li>
             <li>
-              <a href='/'>My Sales</a>
+              <Link href='/'>My Sales</Link>
             </li>
             <li>
               <button onClick={logoutHandler}>Logout</button>
